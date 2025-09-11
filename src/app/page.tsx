@@ -2,7 +2,7 @@ import React from 'react'
 
 const Page = () => {
   return (
-    <div>Page</div>
+    <div className='font-IBMPlex font-bold text-5xl'>Page</div>
   )
 }
 
