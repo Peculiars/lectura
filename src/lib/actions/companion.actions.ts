@@ -172,6 +172,10 @@ export const getBookmarkedCompanions = async (userId: string) => {
     .from("bookmarks")
     .select(`companions:companion_id (*)`) 
     .eq("user_id", userId);
+
+    console.log('data', data)
+    console.log('userId', userId)
+    console.log('supabase', supabase)
   if (error) {
     throw new Error(error.message);
   }
