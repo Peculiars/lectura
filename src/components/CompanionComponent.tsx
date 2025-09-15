@@ -85,7 +85,7 @@ const CompanionComponent = ({ companionId, subject, topic, name, userName, userI
             serverMessages: [],
         }
 
-        // @ts-expect-error
+        // @ts-expect-error vapi.start types are dynamic and not fully inferred by TypeScript
         vapi.start(configureAssistant(voice, style), assistantOverrides)
     }
 
